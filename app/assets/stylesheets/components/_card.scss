@@ -10,6 +10,7 @@
   background-position: center;
   color: white;
   position: relative;
+  filter: drop-shadow(0 0 0.75rem rgba(0,0,0,0.6))
 }
 .card-description {
   position: absolute;
