@@ -1,15 +1,5 @@
 <h1><%= @cocktail.name.upcase %></h1>
 
-<!-- <ul>
-  <% @cocktail.doses.each do |dose| %>
-    <li><%= dose.description %> <%= link_to "Remove", dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } %></li>
-    <li><%= dose.ingredient.name %></li>
-  <% end %>
-  <li><%= link_to "Add a dose", new_cocktail_dose_path(@cocktail) %></li>
-  <li><%= link_to "Return to cocktails", cocktails_path %></li>
-</ul>
-<%= link_to "Back to all cocktails", root_path %>
- -->
   <div class="row">
     <div class="col-sm-12 col-md-6">
       <h3>Recipe</h3>
@@ -30,6 +20,7 @@
                 <% end %>
               </td>
             </tr>
+
           <% end %>
         </tbody>
       </table>
@@ -37,3 +28,8 @@
     <div class="col-sm-12 col-md-6">
     </div>
   </div>
+<ul>
+  <i class="fas fa-plus"></i><%= link_to "Add a dose", new_cocktail_dose_path(@cocktail) %>
+  <br>
+  <i class="fas fa-plus"></i><%= link_to "Back to all cocktails", root_path %>
+</ul>
